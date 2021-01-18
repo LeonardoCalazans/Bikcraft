@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/sobre.css">
     <link rel="stylesheet" href="css/responsivo.css">
+    <script>document.documentElement.classList.add("js");</script>
 </head>
 
 <body>
@@ -32,12 +33,12 @@
 
     <section class="intro_interna interna_sobre">
         <div class="container">
-            <h1>Sobre</h1>
-            <p>Conheça mais sobre a bikcraft</p>
+            <h1 data-anime="400" class="fadeInDown">Sobre</h1>
+            <p data-anime="600" class="fadeInDown">Conheça mais sobre a bikcraft</p>
         </div>
     </section>
 
-    <section class="missao_sobre container">
+    <section data-anime="800" class="missao_sobre container fadeInDown">
         <div class="grid-10">
             <h2 class="subtitle_interno">História, Missão e Visão</h2>
             <p>O verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida
@@ -54,7 +55,7 @@
                 <li>- Natureza com sustentabilidade</li>
             </ul>
         </div>
-        <div class="grid-16 foto_equipe">
+        <div data-anime="1000" class="fadeInDown grid-16 foto_equipe">
             <img src="img/equipe-bikcraft.jpg" alt="Equipe Bikcraft">
         </div>
     </section>
@@ -126,6 +127,11 @@
             </div>
         </div>
     </footer>
+    <!-- JavaScript -->
+    <script src="./js/simple-anime.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/irtopo.js"></script>
+    <!-- JavaScript -->
 </body>
 
 </html>
