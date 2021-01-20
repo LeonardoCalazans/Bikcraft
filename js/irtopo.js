@@ -1,18 +1,21 @@
+const backTop = document.getElementById('#irtopo');
+
 $(document).ready(function () {
-    $("#irtopo").css("display", "none");
+    console.log("ready");
+    backTop.style.display = "none";
 
     $("body").scroll(function () {
         if ($(this).scrollTop() == 0) {
-            $("#irtopo").css("display", "none");
+            backTop.style.display = "none";
         } else {
-            $("#irtopo").css("display", "block");
+            backTop.style.display = "block";
         }
     });
 
     $(document).ready(function () {
-        $('#irtopo').click(function () {
+        $(backTop).click(function () {
             $('html, body').animate({ scrollTop: 0 }, 800);
             return false;
         });
     })
-});
+})

@@ -38,19 +38,30 @@
 			<h1 data-anime="400" class="fadeInDown">Contato</h1>
 			<p data-anime="800" class="fadeInDown">Tire suas dúvidas com a gente</p>
 		</div>
+		<!-- irtopo -->
+		<a href="#" id="irtopo" title="Ir para o topo">Topo
+			<span></span>
+		</a>
+		<!-- irtopo -->
 	</section>
 
 	<section data-anime="1000" class="fadeInDown contato container">
-		<form id="form_orcamento" class="contato_form grid-8">
+		<form id="form_orcamento" method="POST" action="./enviar.php" class="contato_form grid-8 formPHP">
 			<label for="nome">Nome</label>
-			<input type="text" id="nome">
+			<input type="text" id="nome" name="nome" required>
 			<label for="email">E-mail</label>
-			<input type="text" id="email">
+			<input type="email" id="email" name="email" required>
 			<label for="telefone">Telefone</label>
-			<input type="text" id="telefone">
-			<label for="espec">Especificações</label>
-			<textarea id="espec"></textarea>
-			<button type="submit" class="btn btn_preto">Enviar</button>
+			<input type="text" id="telefone" name="telefone">
+			<!-- label para evitar span de robos -->
+			<label class="invisible">Se você não é um robô, deixe em branco.</label>
+			<input type="text" class="invisible" name="leaveblank">
+			<label class="invisible">Se você não é um robô, não mude este campo.</label>
+			<input type="text" class="invisible" name="dontchange" value="http://">
+
+			<label for="mensagem">Mensagem</label>
+			<textarea id="mensagem" name="mensagem" required></textarea>
+			<button id="submit" name="submit" type="submit" class="btn btn_preto">Enviar</button>
 		</form>
 		<div class="contato_dados grid-8">
 			<h3>Dados</h3>
@@ -126,6 +137,7 @@
 	</footer>
 	<!-- JavaScript -->
 	<script src="./js/simple-anime.js"></script>
+	<script src="./js/simple-form.js"></script>
 	<script src="./js/script.js"></script>
 	<script src="./js/irtopo.js"></script>
 	<!-- JavaScript -->

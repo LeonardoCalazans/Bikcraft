@@ -369,6 +369,20 @@ img {
   font-weight: bold;
 }
 
+.invisible {
+  visibility: hidden;
+  position: absolute;
+  height: 0px;
+}
+
+#form-sucesso {
+  color: #31aa39;
+}
+
+#form-erro {
+  color: #f64540;
+}
+
 #irtopo {
   position: fixed;
   right: 10px;
@@ -376,7 +390,7 @@ img {
   cursor: pointer;
   width: 40px;
   height: 40px;
-  background-color: #000;
+  background-color: #333;
   text-indent: -9999px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -394,12 +408,12 @@ img {
   border: 8px solid transparent;
   border-bottom-color: #fec63e;
 }
-#irtopo:hover,
-#irtopo span:hover {
+#irtopo:hover {
   transition: 0.2s;
   background-color: #fec63e;
   color: #000;
-
+}
+#irtopo:hover span {
   border-bottom-color: #000;
 }
 
@@ -460,18 +474,4 @@ img {
   opacity: 1;
   transform: none;
   transition: opacity 800ms, transform 800ms;
-}
-
-.nao-aparece {
-  visibility: hidden;
-  position: absolute;
-  height: 0px;
-}
-
-#form-sucesso {
-  color: #31aa39;
-}
-
-#form-erro {
-  color: #f64540;
 }

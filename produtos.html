@@ -36,8 +36,12 @@
             <h1 data-anime="400" class="fadeInDown">Produtos</h1>
             <p data-anime="600" class="fadeInDown">Conheça nossos produtos</p>
         </div>
+        <!-- irtopo -->
+        <a href="#" id="irtopo" title="Ir para o topo">Topo
+            <span></span>
+        </a>
+        <!-- irtopo -->
     </section>
-
     <section data-anime="800" class="fadeInDown produto_item container">
         <div class="grid-11">
             <img src="img/produtos/bikcraft-retro-1.jpg" alt="Bikcraft retro">
@@ -111,17 +115,24 @@
     <section class="orcamento">
         <div class="container">
             <h2 class="subtitle after">Orçamento</h2>
-            <form id="form_orcamento" class="form grid-8">
+            <form id="form_orcamento" method="POST" action="./enviar.php" class="form grid-8 formPHP">
                 <label for="nome">Nome</label>
-                <input type="text" id="nome">
+                <input type="text" id="nome" name="nome" required>
                 <label for="email">E-mail</label>
-                <input type="text" id="email">
+                <input type="email" id="email" name="email" required>
                 <label for="telefone">Telefone</label>
-                <input type="text" id="telefone">
-                <label for="espec">Especificações</label>
-                <textarea id="espec"></textarea>
-                <button type="submit" class="btn">Enviar</button>
+                <input type="text" id="telefone" name="telefone">
+                <!-- label para evitar span de robos -->
+                <label class="invisible">Se você não é um robô, deixe em branco.</label>
+                <input type="text" class="invisible" name="leaveblank">
+                <label class="invisible">Se você não é um robô, não mude este campo.</label>
+                <input type="text" class="invisible" name="dontchange" value="http://">
+
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+                <button id="submit" name="submit" type="submit" class="btn">Enviar</button>
             </form>
+
             <div class="orcamento_dados grid-8">
                 <h3>Dados</h3>
                 <span>+55 21 93223 3232</span>
@@ -187,6 +198,7 @@
     </footer>
     <!-- JavaScript -->
     <script src="./js/simple-anime.js"></script>
+    <script src="./js/simple-form.js"></script>
     <script src="./js/script.js"></script>
     <script src="./js/irtopo.js"></script>
     <!-- JavaScript -->
