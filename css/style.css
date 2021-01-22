@@ -1,4 +1,7 @@
 /* Estilos gerais */
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -22,7 +25,16 @@ img {
   display: block;
   max-width: 100%;
 }
-
+.header_btnMenu {
+  display: none;
+}
+.header__btnMenu {
+  float: right;
+  margin: 1.5em;
+  background: transparent;
+  border: none;
+  font-size: 14px;
+}
 .btn {
   border: 3px solid #fec63e;
   padding: 10px 30px;
@@ -395,6 +407,7 @@ img {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
+  z-index: 10;
 }
 #irtopo span {
   content: "▲";
@@ -474,4 +487,8 @@ img {
   opacity: 1;
   transform: none;
   transition: opacity 800ms, transform 800ms;
+}
+
+.js .header_nav {
+  transition: max-height 1s;
 }
