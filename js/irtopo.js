@@ -1,7 +1,18 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const backTop = document.getElementById('#irtopo');
-    document.getElementById(backTop).addEventListener("click", window.top);
-});
+
+const backTop = document.getElementById('irtopo');
+
+// backTop.addEventListener("click", window.top);
+
+window.onscroll = () => {
+    scroll();
+}
+function scroll() {
+    if (window.documentElement.scrollTop > 50) {
+        backTop.style.display = "block";
+    } else {
+        backTop.style.display = "none";
+    }
+};
 
 // $(document).ready(function () {
 //     console.log("ready");
