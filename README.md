@@ -17,7 +17,7 @@ O projeto **Bikcraft** foi desenvolvido durante o curso de **Web Design Completo
 ---
 
 ## 🖥️ Demonstração
-[![Bikcraft](https://i.imgur.com/Gy5e6Tn.png "Clique para acessar o projeto")](https://leonardocalazans.github.io/Bikcraft/views/index.html "Clique para acessar o projeto")   
+[![Bikcraft](https://i.imgur.com/Gy5e6Tn.png "Clique para acessar o projeto")](https://leonardocalazans.github.io/Bikcraft/ "Clique para acessar o projeto")   
 
 Você pode acessar o projeto clicando [aqui](https://leonardocalazans.github.io/Bikcraft/).
 
