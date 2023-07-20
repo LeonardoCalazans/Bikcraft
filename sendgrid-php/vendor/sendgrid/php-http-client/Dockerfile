@@ -1,4 +1,4 @@
-FROM php:7.3.31-apache
+FROM php:7.4.22-apache
 
 ARG sendgrid_apikey
 ENV SENDGRID_API_KEY=$sendgrid_apikey
